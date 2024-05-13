@@ -14,7 +14,7 @@ function choose_from_menu() {
         for o in "${options[@]}"
         do
             if [ "$index" == "$cur" ]
-            then echo -e " >\e[7m$o\e[0m" # mark & highlight the current option
+            then echo -e " > \e[7m$o\e[0m" # mark & highlight the current option
             else echo "  $o"
             fi
             index=$(( $index + 1 ))
